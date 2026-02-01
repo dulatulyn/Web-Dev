@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        :root{
+            --forecolor-blue: #1877f2;
+            --forecolor-green: #36a420;
+        }
+        
+        .facebook-img{
+            width: 300px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .title{
+            font-size: 28px;
+            color: #1c1e21;
+            line-height: 32px;
+            padding: 0 20px;
+        }
+
+        .login-page{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            gap: 80px;
+            padding: 20px;
+        }
+
+        .facebook-section{
+            flex: 1;
+            max-width: 580px;
+        }
+
+        .login-section{
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .login-window{
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 28px;
+        }
+
+        .login-input-email,
+        .login-input-password{
+            width: 100%;
+            height: 50px;
+            padding: 14px 16px;
+            font-size: 17px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .login-input-email:focus,
+        .login-input-password:focus{
+            outline: none;
+            border-color: var(--forecolor-blue);
+        }
+
+        .login-button{
+            width: 100%;
+            height: 48px;
+            background-color: var(--forecolor-blue);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        .login-button:hover{
+            background-color: #166fe5;
+        }
+
+        .signup-link{
+            display: block;
+            color: var(--forecolor-blue);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .signup-link:hover{
+            text-decoration: underline;
+        }
+
+        hr{
+            border: none;
+            border-top: 1px solid #dadde1;
+            margin: 20px 0;
+        }
+
+        .create-account-button{
+            width: auto;
+            height: 48px;
+            padding: 0 40px;
+            background-color: var(--forecolor-green);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .create-account-button:hover{
+            background-color: #2d8a1a;
+        }
+
+        .createpage-title{
+            text-align: center;
+            font-size: 14px;
+            color: #1c1e21;
+        }
+
+        .createpage-title a{
+            color: #1c1e21;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .createpage-title a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="facebook-section">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="facebook" class="facebook-img">
+            <div class="title">Facebook helps you connect and share with the people in your life.</div>
+        </div>
+        <div class="login-section">
+            <div class="login-window">
+                <form action="POST">
+                    <input type="email" class="login-input-email" placeholder="Email or phone number">
+                    <input type="password" class="login-input-password" placeholder="Password">
+                    <button class="login-button" type="submit">Log In</button>
+                    <a href="https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzY5NDIxNzE4LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&ars=facebook_login&next" class="signup-link">Forgotten password?</a>
+                    <hr>
+                    <button class="create-account-button" type="button">Create New Account</button>
+                </form>
+            </div>
+            <div class="createpage-title"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page </a>for a celebrity, brand or business.</div>
+        </div>
+    </div>
+</body>
+</html>
